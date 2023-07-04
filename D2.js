@@ -3,8 +3,11 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n1 = 14;
-let n2 = 13;
+let n1 = Math.floor(Math.random()* 200);
+let n2 = Math.floor(Math.random()* 200);
+
+console.log(n1);
+console.log(n2);
 
 if (n1===n2) {
   console.log("n1 ha lo stesso valore numerico di n2");
@@ -21,7 +24,7 @@ if (n1===n2) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n3 = 61;
+let n3 = Math.floor(Math.random()* 10);
 if (n3 !== 5) {
   console.log("not equal");
 }
@@ -31,7 +34,7 @@ if (n3 !== 5) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n4 = 50
+let n4 = Math.floor(Math.random()* 200)
 if (n4 % 5 === 0) {
   console.log("numero scelto divisibile per 5");
 } else {
@@ -44,8 +47,8 @@ if (n4 % 5 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let n5 = 3; 
-let n6 = 5;
+let n5 = Math.floor(Math.random()* 10); 
+let n6 = Math.floor(Math.random()* 10);
 
 if (n5 === 8 || n5 + n6 === 8 || n5 - n6 === 8 || n6 - n5 === 8) {
   console.log("Verificato");
@@ -96,9 +99,9 @@ if (blackFridayPrice>50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n7 = 49; 
-let n8 = 27;
-let n9 = 187;
+let n7 = Math.floor(Math.random()* 200); 
+let n8 = Math.floor(Math.random()* 200);
+let n9 = Math.floor(Math.random()* 200);
 
 let greaterNum7 = [ n7, n8, n9];
 let greaterNum8 = [ n8, n7, n9];
@@ -139,7 +142,7 @@ if (n9 > n7 && n7 > n8) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let myValue = 8
+let myValue = "TOM"
 
 if (typeof myValue === 'number') {
   console.log("il valore inserito è un numero");
@@ -214,6 +217,7 @@ console.log(me);
 const firstAr = [];
 firstAr.unshift(1,2,3,4,5,6,7,8,9,10)
 console.log(firstAr);
+
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
