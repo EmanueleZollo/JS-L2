@@ -13,9 +13,9 @@ if (n1===n2) {
   console.log("n1 ha lo stesso valore numerico di n2");
 } else{
     if (n1>n2){
-      console.log("n1 è maggiore di n2");
+      console.log(n1 + " è maggiore di " + n2);
     } else {
-      console.log("n2 è maggiore di n1");
+      console.log(n2 + " è maggiore di " + n1);
     }
 }
 
@@ -25,6 +25,7 @@ if (n1===n2) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n3 = Math.floor(Math.random()* 10);
+console.log(n3);
 if (n3 !== 5) {
   console.log("not equal");
 }
@@ -35,10 +36,12 @@ if (n3 !== 5) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n4 = Math.floor(Math.random()* 200)
+console.log(n4);
+
 if (n4 % 5 === 0) {
-  console.log("numero scelto divisibile per 5");
+  console.log(n4 + " divisibile per 5");
 } else {
-  console.log("numero scelto non divisibile per 5");
+  console.log(n4 + " non è divisibile per 5");
 }
 
 /* ESERCIZIO 4
@@ -50,7 +53,10 @@ if (n4 % 5 === 0) {
 let n5 = Math.floor(Math.random()* 10); 
 let n6 = Math.floor(Math.random()* 10);
 
-if (n5 === 8 || n5 + n6 === 8 || n5 - n6 === 8 || n6 - n5 === 8) {
+console.log(n5);
+console.log(n6);
+
+if (n5 === 8 || n6 === 8 ||  n5 + n6 === 8 || n5 - n6 === 8 || n6 - n5 === 8) {
   console.log("Verificato");
 } else {
   console.log("non Verificato");
@@ -63,13 +69,13 @@ if (n5 === 8 || n5 + n6 === 8 || n5 - n6 === 8 || n6 - n5 === 8) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart = 49;
+let totalShoppingCart = Math.floor(Math.random()* 100);
+let shippingCost = 10;
+let endShippingCart = totalShoppingCart + shippingCost;
 
 if (totalShoppingCart>50) {
-   console.log("Grazie per aver acquisto. Ti offriamo il costo di spedizione!");
+   console.log("Grazie per aver acquistato. Ti offriamo il costo di spedizione!");
 } else {
-  const shippingCost = 10;
-  const endShippingCart = totalShoppingCart + shippingCost;
   console.log("Grazie per aver acquistato. L'importo sul carrello è stato aggiornato con le spese di spedizione. Il costo è pari a euro " + endShippingCart);
 }
 
@@ -84,11 +90,9 @@ if (totalShoppingCart>50) {
 const discountBlackFriday = 20/100
 const blackFridayPrice = totalShoppingCart - (discountBlackFriday*totalShoppingCart);
 if (blackFridayPrice>50) {
-  console.log("Grazie per aver acquisto. Ti offriamo il costo di spedizione!");
+  console.log("Grazie per aver acquistato durante il Black Friday. Ti offriamo il costo di spedizione!");
 } else {
- const shippingCost = 10;
- const endShippingCart = blackFridayPrice + shippingCost;
- console.log("Grazie per aver acquistato. L'importo sul carrello è stato aggiornato con le spese di spedizione. Il costo è pari a euro " + endShippingCart);
+ console.log("Grazie per aver acquistato durante il Black Friday. L'importo sul carrello è stato aggiornato con le spese di spedizione. Il costo è pari a euro " + endShippingCart);
 }
 
 
@@ -103,36 +107,30 @@ let n7 = Math.floor(Math.random()* 200);
 let n8 = Math.floor(Math.random()* 200);
 let n9 = Math.floor(Math.random()* 200);
 
-let greaterNum7 = [ n7, n8, n9];
-let greaterNum8 = [ n8, n7, n9];
-let greaterNum9 = [ n9, n8, n7];
-
-let greaterNum7s = [n7, n9, n8];
-let greaterNum8s = [n8, n9, n7];
-let greaterNum9s = [n9, n7, n8];
+console.log("Questi sono i numeri estratti " + n7, n8, n9);
 
 if (n7 > n8 &&  n8 > n9) {
-  console.log(greaterNum7);
+  console.log(n7, n8, n9);
 }
 
 if (n8 > n7 && n7 > n9) {
-  console.log(greaterNum8);
+  console.log(n8, n7, n9);
 }
 
 if (n9 > n8 && n8 > n7) {
-  console.log(greaterNum9);
+  console.log(n9, n8, n7);
 }
 
 if (n7 > n9 &&  n9 > n8) {
-  console.log(greaterNum7s);
+  console.log(n7, n9, n8);
 }
 
 if (n8 > n9 && n9 > n7) {
-  console.log(greaterNum8s);
+  console.log(n8, n9, n7);
 }
 
 if (n9 > n7 && n7 > n8) {
-  console.log(greaterNum9s);
+  console.log(n9, n7, n8);
 }
 
 
